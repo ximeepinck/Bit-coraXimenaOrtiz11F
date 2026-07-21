@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitácora Ximena Ortiz</title>
-    <STyle>
-        html, body{
+    <style>
+        html, body {
             height: 100%;
             margin: 0;
             font-family: 'Times New Roman', Times, serif;
         }
-        body{
+        body {
             display: flex;
             flex-direction: column;
             text-align: center; 
         }
-        header{
+        header {
             padding: 20px;
             background-color: rgb(255, 174, 224);
         }
-        main{
+        main {
             flex: 1;
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
-            color: rgb(179, 202, 255);
+            color: #333; /* Cambiado a un tono legible sobre fondo blanco */
         }
-        footer{
+        footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -37,15 +37,14 @@
         h1 {
             color: white;
             text-shadow:
-            0 0 5px #83cfff,
-            0 0 10px #83cfff,
-            0 0 20px #83cfff,
-            0 0 40px #83cfff;
+                0 0 5px #83cfff,
+                0 0 10px #83cfff,
+                0 0 20px #83cfff,
+                0 0 40px #83cfff;
         }
         .logo {
             transition: transform 0.3s ease;
         }
-
         .logo:hover {
             transform: scale(1.2);
         }
@@ -57,28 +56,66 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
         .semana:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         }
-    </STyle>
+        /* Ajuste para que las imágenes y videos no se salgan del contenedor */
+        .semana img, .semana video {
+            max-width: 100%;
+            border-radius: 8px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bitácora Segunda y Tercera Unidad </h1>
+        <h1>Bitácora Segunda y Tercera Unidad</h1>
     </header>
+    
     <main>
         <h4>Contenido de la página WEB</h4>
+
+        <!-- Semana 1: Documento PDF -->
         <div class="semana">
             <h3>Semana 1</h3>
             <p>Aprendí sobre HTML básico...</p>
-            <iframe src="recursos/pdf/Intarduinoxo.pdf" width="100%" height="500px">
+            <iframe src="recursos/pdf/Intarduinoxo.pdf" width="100%" height="500px"></iframe>
         </div>
+
+        <!-- Semana 2: Imagen del circuito (Corregida con <img>) -->
         <div class="semana">
             <h3>Semana 2 circuito</h3>
             <p>Aprendí sobre CSS...</p>
-            <iframe src="primer circuito ximena .png" width="100%" height="500px"></iframe>
+            <img src="primer circuito ximena .png" alt="Primer circuito de Ximena">
+        </div>
+
+        <!-- Plantilla lista para Imagen -->
+        <div class="semana">
+            <h3>Semana 3 - Imagen</h3>
+            <p>Descripción de la actividad...</p>
+            <!-- Sustituye RUTA_DE_TU_IMAGEN.jpg por el nombre o ruta de tu archivo -->
+            <img src="RUTA_DE_TU_IMAGEN.jpg" alt="Descripción de la imagen">
+        </div>
+
+        <!-- Plantilla lista para Video -->
+        <div class="semana">
+            <h3>Semana 4 - Video</h3>
+            <p>Descripción del video...</p>
+            <!-- Sustituye RUTA_DE_TU_VIDEO.mp4 por la ruta de tu archivo MP4 -->
+            <video controls width="100%">
+                <source src="RUTA_DE_TU_VIDEO.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+    </main>
+
+    <footer>
+        <span>@ximee_ortiz08</span>
+        <img class="logo" src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="50" width="200" alt="Logo Colegio Capouilliez">
+    </footer>
+</body>
+</html>
             
             
         </div>
